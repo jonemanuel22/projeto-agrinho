@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --cor-campo: #a8d5ba;
+    --cor-cidade: #cce0f4;
+    --cor-texto: #333;
+    --cor-hover: #ffcc70;
+    --cor-botao: #4CAF50;
+    --cor-botao-texto: white;
+}
+
+body {
+    background: url('img/fundo.campo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+h1, h5 {
+    color: var(--cor-botao);
+    font-weight: 700;
+}
+
+h2 {
+    color:white;
+    font-weight: 700;
+}
+
+.lead, .btn-link {
+    color: var(--cor-botao);
+    font-weight: 700;
+}
+
+a, .btn-link:hover {
+    color: var(--cor-botao);
+}
+
+a:hover {
+    color:var(--cor-hover);
+}
+
+/* Cabeçalho */
+.cabecalho {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Seções */
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    gap: 40px;
+}
+
+.secao { /* Seções dentro do conteúdo */
+    flex: 1;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.secao img { /* Imagem dentro das seções */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.lista-secao { /* Lista de seções */
+    font-style: italic;
+    font-weight: 1000;
+}
+
+.secao:hover { /* Efeito hover nas seções */
+    transform: scale(1.05);
+    background-color: var(--cor-hover);
+}
+
+.campo { /* Seção específica para campo */
+    background-color: var(--cor-campo);
+}
+
+.cidade { /* Seção específica para cidade */
+    background-color: var(--cor-cidade);
+}
+
+/* Cards */
+.titulo-pesquisas { /* Título antes das pesquisas */
+    color: var(--cor-texto);
+}
+
+.card { /* Cartões das pesquisa */
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+.rodape {
+    margin-top: 50px;
+    width: 100%; 
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative; 
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Acessibilidade: Alto Contraste */
+.alto-contraste {
+    background: black !important;
+    color: yellow !important;
+}
+
+.alto-contraste .cabecalho,
+.alto-contraste .rodape {
+    background: black !important;
+    border: 2px solid yellow;
+}
+
+.alto-contraste .secao {
+    background: black !important;
+    border: 2px solid yellow;
+}
+
+body.alto-contraste {
+    background: black !important;
+    color: yellow !important;
+}
+
+body.alto-contraste .modal {
+    background: rgba(0,0,0,0.5) !important;
+}
+
+body.alto-contraste .modal-content {
+    background: #222 !important;
+    color: yellow !important;
+}
+

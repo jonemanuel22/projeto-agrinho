@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Campo-Cidade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1>FESTEJANDO A CONEXÃO CIDADE-CAMPO 🌾🏙️</h1>
+        <p>O campo alimenta a cidade, a cidade apoia o campo.</p>
+        <button id="contrasteBtn" class="btn btn-secondary">Alto Contraste</button>
+    </header>
+
+    <main class="conteudo">
+        <section class="secao campo">
+            <h2>🌿 O Campo</h2>
+            <img src="img/campo.jpg" alt="Imagem de plantação no campo" width="100%">
+            <p>O campo é responsável pela produção de alimentos, fibras e matérias-primas essenciais para a cidade. Além
+                disso, mantém tradições culturais, modos de vida sustentáveis e preserva o meio ambiente.</p>
+            <ul class="lista-secao">
+                <li>Produção agrícola e pecuária</li>
+                <li>Alimentos frescos e orgânicos</li>
+                <li>Práticas sustentáveis de cultivo</li>
+            </ul>
+        </section>
+
+        <section class="secao cidade">
+            <h2>🏙️ A Cidade</h2>
+            <img src="img/cidade.jpg" alt="Imagem da cidade com prédios modernos" width="100%">
+            <p>A cidade transforma os produtos do campo em bens industrializados, desenvolve tecnologias para o setor
+                agrícola e garante a distribuição eficiente de alimentos e recursos para toda a população.</p>
+            <ul class="lista-secao">
+                <li>Mercados e centros de distribuição</li>
+                <li>Indústrias de transformação</li>
+                <li>Inovação tecnológica no agro</li>
+            </ul>
+        </section>
+    </main>
+
+    <main class="container mt-5">
+        <h2 class="titulo-pesquisas">Pesquisas</h2>
+        <div class="row">
+            <!-- Pesquisa 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/alimentos.jpg" class="card-img-top" alt="Imagem de Vista superior frutas e vegetais">
+                    <div class="card-body">
+                        <h5 class="card-title">Paraná: 2º estado com maior segurança alimentar no país</h5>
+                        <p class="card-text">De acordo com dados do IBGE (PNAD 123, em 2023), 82,1% dos domicílios
+                            paranaenses têm acesso a alimento suficiente e de qualidade — índice superior à média
+                            nacional (72,4%) e atrás apenas de SC</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Saiba
+                            Mais!</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Pesquisa 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/fossa.biodigestora.jpg" class="card-img-top" alt="Imagem do projeto Flappy Bird">
+                    <div class="card-body">
+                        <h5 class="card-title">Inovação com fossas biodigestoras</h5>
+                        <p class="card-text">Pesquisa avalia o impacto das fossas biodigestoras na vida rural em
+                            Paranavaí, mostrando benefícios no saneamento básico, redução de resíduos e aumento da
+                            qualidade de vida no campo — reforçando a importância de tecnologias sustentáveis integradas
+                            ao meio urbano
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Saiba
+                            Mais!</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pesquisa 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/horta.creche.jpeg" class="card-img-top" alt="Imagem do projeto Vale dos Baixinhos">
+                    <div class="card-body">
+                        <h5 class="card-title">Hortas comunitárias em escolas e creches</h5>
+                        <p class="card-text">Iniciativa recente em 2022 implantou hortas orgânicas em 19 escolas e
+                            creches municipais, utilizando estas como espaço pedagógico, incentivo à alimentação
+                            saudável e estratégia para levar práticas do campo ao cotidiano urbano infantil</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Saiba
+                            Mais!</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 1 -->
+            <div class="modal fade" id="modal1" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Paraná: 2º estado com maior segurança alimentar no país</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>De acordo com a PNAD Contínua (4º trimestre de 2023) do IBGE, 82,1% dos domicílios
+                                paranaenses possuem segurança alimentar — ou seja, suas famílias têm acesso regular a
+                                alimentos em quantidade e qualidade adequadas.</p>
+                            <p>Isso representa aproximadamente 3,5
+                                milhões de domicílios, beneficiando cerca de 9,5 milhões de pessoas.</p>
+                            <img src="img/alimentos.jpg" class="img-fluid w-100"
+                                alt="Imagem representativa do projeto de um jogo de Ping Pong">
+                        </div>
+                        <div class="modal-footer">
+                            <a
+                                href="https://www.agricultura.pr.gov.br/Noticia/Parana-e-o-segundo-estado-com-maior-seguranca-alimentar-do-Brasil-aponta-IBGE#:~:text=No%20recorte%20por%20cor%20ou,resultados%20consolidados%20na%20tabela%20AQUI%20.">Confira
+                                agora!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 2 -->
+            <div class="modal fade" id="modal2" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Inovação com fossas biodigestoras</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>O uso de fossas biodigestoras em propriedades rurais de Paranavaí tem sido estudado como
+                                solução sustentável.
+                            </p>
+                            <p>Essas fossas transformam resíduos orgânicos em biogás e biofertilizante, melhorando o
+                                saneamento básico no campo.</p>
+                            <p>O resultado é a redução de poluentes lançados no solo, o fortalecimento da agricultura
+                                orgânica e a promoção de tecnologia social com impacto positivo na saúde rural e urbana
+                            </p>
+                            <img src="img/fossa.biodigestora.jpg" class="img-fluid w-100"
+                                alt="Imagem representativa do projeto Flappy Bird">
+                        </div>
+                        <div class="modal-footer">
+                            <a
+                                href="https://revistaft.com.br/inovacao-e-impacto-das-fossas-biodigestoras-na-sustentabilidade-da-vida-rural-no-municipio-de-paranavai-pr/">Confira
+                                agora!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 3 -->
+            <div class="modal fade" id="modal3" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Hortas comunitárias em escolas e creches</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Em setembro de 2022, foi lançado o projeto “Crianças Saudáveis, Futuro Saudável”, que
+                                levou hortas orgânicas a todas as 19 escolas e creches municipais de Paranavaí.</p>
+
+                            <p>O projeto, apoiado pela Prefeitura via Seduc e pelo Instituto Melhores Dias, foi
+                                implementado com custo zero para o município.</p>
+
+                            <p>Cada escola recebeu insumos, estrutura e orientação de engenheiro agrônomo para que os
+                                alunos plantassem e cuidassem de verduras e legumes — cultivando conhecimento sobre a
+                                terra, fases de crescimento, respeito ao ciclo de vida das plantas e importância da
+                                alimentação saudável.</p>
+
+                            <p>A expectativa é que as crianças repliquem esse aprendizado em casa, incentivando hortas
+                                familiares e redução do uso de agrotóxicos nas refeições diárias</p>
+                            <img src="img/horta.creche.jpeg" class="img-fluid w-100"
+                                alt="Imagem representativa do Vale dos Baixinhos">
+                        </div>
+                        <div class="modal-footer">
+                            <a
+                                href="https://paranavai.portaldacidade.com/noticias/cidade/hortas-comunitarias-serao-implantadas-em-todas-as-escolas-e-creches-municipais-3638">Confira
+                                agora!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer class="rodape">
+        <p>Projeto desenvolvido por João Emanuel para o Concurso Agrinho 2025 - Subcategoria Front-End.</p>
+        <p>
+            Imagem do campo por <a
+                href="https://unsplash.com/pt-br/fotografias/um-vale-verde-exuberante-cercado-por-montanhas-AgPj0maIEEs"
+                target="_blank">Dhan Sugui</a> no Unsplash. <br>
+            Imagem da cidade por <a
+                href="https://unsplash.com/pt-br/fotografias/fotografia-em-time-lapse-de-uma-rodovia-da-cidade-mHaNv8ajVis"
+                target="_blank">Vanessa Bumbeers</a> no Unsplash. <br>
+            Fundo por <a href="https://pixabay.com/pt/photos/eua-nebraska-midwest-am%C3%A9rica-4582704/"
+                target="_blank">Mike</a> no PixaBay <br>
+        </p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('contrasteBtn');
+        btn.addEventListener('click', () => {
+            document.body.classList.toggle('alto-contraste');
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
